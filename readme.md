@@ -10,7 +10,14 @@ I recently read an article from The Ringer about a political betting market call
 
 The Jupyter Notebook uses Plotly for some of the plots, as I knew I wanted to build a dashboard later on using Plotly's Dash. The dashboard can be run by calling `python Dashboard.py`   
 
-The Jupyter Notebook shows the entire process of starting with the tweets through making predictions for the current market. To pull the tweets, I've been using the [Trump Twitter Archive](http://www.trumptwitterarchive.com/) to get a .csv output of all of the tweets from the @realDonaldTrump account from his inauguration date. After some cleaning, I hit the PredictIt API to get the current market prices. The prediction part relies solely on previous tweet counts from the account. At a given hour _x_, I look at how many tweets the account has tweeted after that hour _x_ in the past. With the help of the standard deviation and skew of these results, I create a skewed-normal probability distribution and use it to assign probabilities to each bracket.
+The Jupyter Notebook shows the entire process of starting with the tweets through making predictions for the current market. To pull the tweets, I've been using the [Trump Twitter Archive](http://www.trumptwitterarchive.com/) to get a .csv output of all of the tweets from the @realDonaldTrump account from his inauguration date. After some cleaning, I hit the PredictIt API to get the current market prices. The prediction part relies solely on previous tweet counts from the account. At a given hour _x_, I look at how many tweets the account has tweeted after that hour _x_ in the past. With the help of the standard deviation and skew of these results, I create a skewed-normal probability distribution and use it to assign probabilities to each bracket.  
+
+Here are what the visualizations should look like:  
+![alt text](https://raw.githubusercontent.com/billyhines/donnie-tweets/master/images/averagePlot.png "Average Plot")  
+
+![alt text](https://raw.githubusercontent.com/billyhines/donnie-tweets/master/images/forecastPlot.png "Forecast Plot")  
+
+
 
 ## Future Development
 
