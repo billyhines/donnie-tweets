@@ -13,7 +13,7 @@ import plotly
 import plotly.plotly as py
 import plotly.graph_objs as go
 
-plotly.tools.set_credentials_file(username='bhines239', api_key='fKAY4BXT5CHgakY2KB1Z')
+plotly.tools.set_credentials_file(username='[INSERT USERNAME]', api_key='[INSERT API KEY]')
 
 
 ###############################
